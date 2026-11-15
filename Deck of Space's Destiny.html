@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deck of Space's Destiny</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>*{box-sizing:border-box}
+body{margin:0;background:#080F24;color:#F4F7FF;font:15px/1.5 system-ui,Segoe UI,sans-serif;min-height:100vh}
+.st{position:fixed;inset:0;background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff,transparent),radial-gradient(1px 1px at 90px 120px,#A7E5FF,transparent),radial-gradient(1.5px 1.5px at 150px 60px,#fff,transparent),radial-gradient(1px 1px at 60px 170px,#fff,transparent);background-size:200px 200px;animation:tw 4s infinite alternate;pointer-events:none}
+.neb{position:fixed;inset:0;background:radial-gradient(circle at 20% 15%,#A78BFA33,transparent 40%),radial-gradient(circle at 85% 75%,#55C7FF22,transparent 45%);pointer-events:none}
+@keyframes tw{from{opacity:.4}to{opacity:1}}
+#app{position:relative;max-width:1300px;margin:auto;padding:16px 14px 50px}
+#snd{position:fixed;top:10px;right:10px;z-index:9}
+h1{font-size:clamp(28px,6vw,54px);margin:.2em 0;letter-spacing:2px;color:#A7E5FF;text-shadow:0 0 24px #55C7FF}
+h2,h3,h4{margin:.3em 0}
+.gl{background:#101D3Acc;backdrop-filter:blur(10px);border:1px solid #55C7FF33;border-radius:14px;padding:16px;margin-bottom:12px}
+.c{text-align:center}
+.menu{display:flex;flex-direction:column;align-items:center;gap:12px;padding-top:9vh}
+.b{background:linear-gradient(135deg,#55C7FF,#A78BFA);color:#080F24;border:0;border-radius:10px;padding:10px 20px;font-weight:700;cursor:pointer;transition:.2s;font-size:15px}
+.b:hover{filter:brightness(1.15);box-shadow:0 0 16px #55C7FF88}
+.b.alt{background:#101D3A;color:#A7E5FF;border:1px solid #55C7FF66}
+.b.sm{padding:5px 10px;font-size:12px}
+.b:disabled{opacity:.4;cursor:not-allowed;box-shadow:none}
+.menu .b{width:260px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.row>*{flex:1 1 260px}
+.ms{cursor:pointer;transition:.2s}
+.ms:hover{box-shadow:0 0 20px #55C7FF66;transform:translateY(-3px)}
+.ms.lk{opacity:.5;cursor:not-allowed}
+.prep{display:grid;grid-template-columns:1fr 320px;gap:14px}
+@media(max-width:900px){.prep{grid-template-columns:1fr}.panel{order:-1}}
+.panel{position:sticky;top:8px;align-self:start;max-height:96vh;overflow:auto}
+@media(max-width:900px){.panel{position:static}}
+.bar{display:flex;gap:8px;margin-bottom:8px}
+input,select{background:#101D3A;color:#F4F7FF;border:1px solid #55C7FF55;border-radius:8px;padding:8px;font-size:14px}
+#q{flex:1;min-width:0}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.chip{background:#101D3A;border:1px solid var(--c,#55C7FF);color:#F4F7FF;border-radius:20px;padding:4px 10px;cursor:pointer;font-size:13px}
+.chip.on{background:var(--c,#55C7FF);color:#080F24;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.cw{display:flex;flex-direction:column;gap:6px}
+.card{perspective:900px;height:260px;cursor:pointer}
+.in{position:relative;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.card.fl .in{transform:rotateY(180deg)}
+.fr,.bk{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid var(--c);border-radius:12px;padding:10px;background:#101D3A;overflow:auto;box-shadow:0 0 10px -3px var(--c);font-size:13px}
+.bk{transform:rotateY(180deg);background:#0d1832}
+.fr h4{font-size:15px}
+.fr small{color:var(--c);font-weight:700}
+.em{font-size:42px;text-align:center;background:radial-gradient(circle,var(--c),transparent 70%);border-radius:10px;opacity:.9}
+.own .fr{background:linear-gradient(#101D3A,#1b3560);animation:pop .4s}
+.own .fr:after{content:"✔ У колоді";position:absolute;top:6px;right:8px;color:#7CE38B;font-size:11px;font-weight:700}
+.lock .fr{filter:grayscale(.8)}
+@keyframes pop{50%{transform:scale(1.06)}}
+.pr{color:#A7E5FF;font-weight:700}
+.meter{height:10px;background:#0a1430;border-radius:6px;overflow:hidden;margin:3px 0 8px}
+.meter i{display:block;height:100%;background:linear-gradient(90deg,#55C7FF,#A78BFA);transition:width .6s}
+.meter.bad i{background:#FF6B6B}
+.ok{color:#7CE38B}.no{color:#FF6B6B}.mid{color:#F5D76E}
+.dk{display:flex;justify-content:space-between;gap:6px;border-bottom:1px solid #55C7FF22;padding:3px 0;font-size:13px}
+.dk button{background:0;border:0;color:#FF6B6B;cursor:pointer}
+.sim{text-align:center;padding-top:5vh}
+.rk{font-size:80px;display:inline-block;animation:up 4s ease-in forwards}
+@keyframes up{0%{transform:translateY(60px)}100%{transform:translateY(-140px) scale(.8)}}
+.log{text-align:left;max-width:600px;margin:14px auto;min-height:120px}
+.rc{border-left:4px solid #55C7FF;padding:6px 10px;margin:8px 0;background:#0d1832;border-radius:6px}
+.rc p{margin:2px 0;font-size:13px}
+.rc.good{border-color:#7CE38B}.rc.mid{border-color:#F5D76E}.rc.bad{border-color:#FF6B6B}
+.big{font-size:28px;font-weight:800}
+a{color:#A7E5FF}
+.fact{font-size:13px;color:#A7E5FF;font-style:italic}
+</style>
+</head>
+<body>
+<div class="st"></div><div class="neb"></div>
+<button id="snd" class="b sm" data-a="snd" aria-label="Sound">🔊 Sound</button>
+<main id="app"></main>
+<script>'use strict';
+const $ = s => document.querySelector(s), app = $('#app');
+const CAT = {crew:['Crew','#55C7FF'],food:['Nutrition','#7CE38B'],eq:['Equipment','#A78BFA'],eng:['Engines','#FF9F5A'],com:['Comfort','#FF7AC6'],med:['Medicine','#FF6B6B'],cmm:['Comms & Protection','#F5D76E']};
+const PN = {safe:'Crew safety',food:'Nutrition',tech:'Technical readiness',med:'Medical support',com:'Psychological comfort',sci:'Scientific output',eco:'Cost efficiency'};
+const M = {
+  moon:{n:'Moon',e:'🌕',days:8,budget:100,food:12,crew:3,com:20,mars:0,ev:4,info:'8 days; lunar dust, extreme temperature swings, limited repairs, communication is critical.'},
+  mars:{n:'Mars',e:'🔴',days:500,budget:400,food:50,crew:4,com:45,mars:1,ev:7,info:'~500 days; autonomy, psychology, radiation, communication delay, long-term food storage.'}
+};
+// format: category|name|emoji|price ($M, model estimate)|description|hint|science fact|properties
+const RAW = `crew|Elias Moreno — Physician|🩺|6|Physician with 12 years of field medicine experience.|Most useful when paired with diagnostics and a medical kit.|On the ISS, medical care combines an onboard physician and telemedicine.|crew,doc
+crew|Sophie Chen — Engineer|🛠️|5|Systems engineer who repairs equipment fast. Has a sensitive vestibular system.|Adaptation to weightlessness is individual and depends on protocols.|Space motion sickness affects many astronauts during the first days of flight.|crew,engr
+crew|Marcus Reid — Geologist|⛏️|5|Geologist specializing in sample collection.|Without science instruments his skills are underused.|The Apollo missions brought back about 382 kg of lunar samples.|crew,geo
+crew|Amina Haddad — Biologist|🧬|5|Biologist experienced in growing plants in closed systems.|Best combined with plant-growing equipment.|On the ISS, the Veggie experiment grew lettuce in space.|crew,bio
+crew|Nathan Brooks — Pilot|🧑‍🚀|6|Test pilot, cool-headed in emergencies.|Handles maneuvers and landing.|During the Apollo 11 landing, the commander flew the final descent manually.|crew,pilot
+crew|Lina Kowalska — Psychologist|🧠|5|Specialist in group dynamics and stress.|Her value grows with the length of isolation.|The Mars-500 experiment studied the psychology of 520 days of isolation.|crew,psy
+crew|Kenji Tanaka — Electrical engineer|🔌|5|Power systems and battery specialist.|Like the engineer, reduces losses from breakdowns.|The Japanese Kibo module is JAXA's contribution to the ISS.|crew,engr
+crew|Irina Melnyk — Radiologist|☢️|5|Physicist specializing in space radiation.|Important for deep-space missions.|Beyond Earth's magnetosphere, radiation exposure is higher than in low Earth orbit.|crew,radx
+food|Freeze-dried food|🥫|3|Light, stores for years.|Requires water to rehydrate.|Freeze-drying lowers food mass and extends shelf life.|food:14
+food|Thermostabilized meals|🍲|4|Ready-made meals in pouches.|Heavier than freeze-dried.|Thermostabilized meals are a staple of ISS nutrition.|food:12
+food|Canned food|🥫|2|Cheap and reliable.|Mass is fuel: cans are heavy.|Every extra kilogram of payload increases fuel requirements.|food:8
+food|Fresh fruit|🍎|2|Tasty and good for morale.|Spoils within days.|Fresh food on the ISS arrives on cargo ships and is eaten quickly.|food:4,shelf:10,c:3
+food|Dried fruit & nuts|🥜|2|Calorie-dense, long shelf life.|Low protein, low variety.|Nuts are a compact source of energy and fats.|food:6,shelf:600
+food|Energy bars|🍫|1|Quick calories.|Monotony reduces appetite.|Reduced appetite is a known problem of spaceflight.|food:5,shelf:600
+food|Protein meals|🍗|3|Support muscle mass.|Without exercise muscles still weaken.|In weightlessness, muscles atrophy faster without loading.|food:9,shelf:700
+food|Vitamin complex|💊|1|Vitamins and minerals.|Not a substitute for food.|Without sunlight, vitamin D must be supplemented.|food:2,med:5,shelf:700
+food|Hydroponic garden|🌱|6|Fresh greens on board.|Needs light, water and care.|Plant growth is studied on the ISS for future long-duration flights.|food:6,plant,c:4,lock:40
+eng|Main engine|🚀|25|Launch is impossible without it.|Useless without fuel.|The Apollo lunar module had separate engines for descent and ascent.|eng
+eng|Fuel (main supply)|⛽|12|Propellant for the engine.|Supply must match mission duration.|Propellant makes up most of a rocket's mass at liftoff.|fuel
+eng|Maneuvering thrusters|🔁|6|Attitude and course correction.|Help if the main engine fails.|Attitude control thrusters stabilize a spacecraft in space.|man
+eng|Backup engine|🛡️|14|Spare in case of failure.|Expensive, but it saves missions.|Redundancy is a basic principle of flight safety.|beng
+eng|Solar panels|☀️|8|Power the onboard systems.|Dust reduces output.|Solar arrays power the ISS.|power
+eng|Batteries|🔋|5|Power in shadow and at night.|Limited capacity.|The lunar night lasts about 14 Earth days.|power
+eq|Basic life support|🫁|10|Oxygen, pressure, CO2 removal.|The crew cannot survive without it.|On the ISS, dedicated systems remove carbon dioxide from the air.|life
+eq|Water recycling|💧|7|Recovers water from humidity and urine.|Essential for long missions.|The ISS system converts humidity and urine into drinking water.|water
+eq|Repair kit|🔧|4|Tools and spare parts.|More effective with an engineer.|On Apollo 13 the crew improvised a CO2 filter adapter from available materials.|spare
+eq|Fire safety|🧯|3|Sensors and extinguishers.|Fire in an enclosed space is very dangerous.|Fire in a sealed volume is among the most serious flight risks.|fire
+eq|Thermal control|🌡️|5|Radiators and insulation.|Lunar temperature swings are huge.|On the Moon's surface temperature changes sharply between day and night.|therm
+eq|Science equipment|🔬|8|Instruments for sample analysis.|Needs a geologist or biologist.|Perseverance collects rock samples in Jezero Crater on Mars.|sci:25
+eq|Lunar rover|🚙|9|Extends the research area.|Dust wears down mechanisms.|A rover was first used on Apollo 15.|sci:15,lock:30
+com|Headphones & music|🎧|1|A personal space in sound.|Cheap and effective.|Music helps reduce stress in isolation.|c:8
+com|Tablet & library|📚|2|Films, books, learning.|Variety against monotony.|Media content is part of psychological support on the ISS.|c:8
+com|Exercise machine|🏋️|5|Treadmill and resistance.|Good for both body and mood.|ISS astronauts exercise about two hours a day.|c:6,gym
+com|Private quarters|🛏️|3|A personal cabin.|Reduces conflict.|Privacy matters for team stability in isolation.|c:10
+com|Video calls with family|📹|3|Contact with loved ones.|On Mars the delay rules out real-time calls.|Communication delay to Mars is from ~3 to over 20 minutes one way.|c:10,earth
+com|Circadian lighting|💡|2|Changes light color through the day.|Helps sleep.|The ISS uses LED lighting to support the circadian rhythm.|c:6,circ
+com|Board games|🎲|1|For the whole team.|Brings people together.|Shared activities support crew cohesion.|c:6
+com|Houseplants|🪴|2|A living corner.|Needs care.|Contact with plants is studied as support in isolation.|c:6
+med|Basic medical kit|🩹|3|Bandages, medication.|Only for minor cases.|Every crewed flight carries a medical kit.|med:15
+med|Advanced medical kit|🏥|7|Extended set for minimal surgery.|Better with a physician.|The ISS has a medical system for a range of conditions.|med:30,lock:30
+med|Diagnostics (ultrasound, tests)|🩻|5|Examination equipment.|Limited without a physician.|Ultrasound exams are performed on the ISS.|diag
+med|Health monitoring|⌚|3|Pulse, pressure, sleep.|Tracks trends.|Monitoring data helps doctors on Earth.|med:12
+med|Sleep control|😴|2|Schedule and lighting.|Sleep debt accumulates.|Sleep disruption is a typical problem for astronauts.|med:8,c:4
+med|Emergency care|🚑|6|Defibrillator, oxygen.|Saves lives in a crisis.|Emergency care is part of flight protocols.|med:20,emerg
+med|Rehabilitation kit|🦴|4|Recovery after flight.|Especially for long missions.|After long flights astronauts go through rehabilitation.|med:10
+cmm|Primary comms|📡|6|Channel to Earth.|Without it the crew is alone.|NASA's Deep Space Network supports far-flung missions.|comm
+cmm|Backup comms|📶|4|A second channel.|Duplicates the primary.|Contact with Earth was key to rescuing the Apollo 13 crew.|bcomm
+cmm|Navigation|🧭|6|Course calculation.|Useful to the pilot.|Apollo had the AGC onboard guidance computer.|nav
+cmm|Radiation monitor|📟|3|Measures doses.|Only warns, does not protect.|Astronauts wear dosimeters.|radm
+cmm|Radiation shielding|🧱|9|Shielding and a shelter.|Adds mass.|Radiation protection from solar storms is being developed for Artemis.|shield,lock:40
+cmm|Fault detection|🧪|4|System self-diagnostics.|Finds the cause faster.|Telemetry is the basis of spacecraft control.|fdir
+cmm|Autonomous computer|🖥️|5|Works without Earth.|Critical with communication delay.|A signal from Mars takes several minutes or more.|auto`.split('\n');
+const CARDS = RAW.map((l, i) => {
+  const [cat, n, e, p, d, h, f, fl] = l.split('|'), o = {};
+  fl.split(',').forEach(x => { const [k, v] = x.split(':'); o[k] = v === undefined ? 1 : +v; });
+  return {id: 'c' + i, cat, n, e, p: +p, d, h, f, o};
+});
+const ALT = {crew:'another specialist covering the crew’s weak spot',food:'lighter food with a longer shelf life',eq:'a backup or lighter analogue',eng:'redundancy instead of a more expensive unit',com:'cheap options (music, games) give a similar effect',med:'a physician on the crew plus telemedicine',cmm:'autonomous systems for communication delays'};
+const EV = [
+  ['Lunar dust in the joints','tech',['spare','engr'],'Lunar dust is abrasive: Apollo astronauts described it as a problem for spacesuits and equipment.'],
+  ['Loss of contact with Earth','safe',['bcomm'],'A backup channel reduces the risk of isolation; with Mars, signal delay is from ~3 to over 20 minutes one way.'],
+  ['Water loop leak','safe',['water','spare'],'Water recycling on the ISS reduces dependence on resupply from Earth.'],
+  ['Solar flare','safe',['shield','radm'],'Beyond Earth’s magnetosphere, solar storms are the main radiation risk.'],
+  ['Crew tension','com',['psy','earth'],'Isolation and confined space are known stress factors in studies such as Mars-500.'],
+  ['Injury during work','med',['doc','emerg'],'On the ISS, medical care relies on trained astronauts and telemedicine.'],
+  ['Onboard computer failure','tech',['auto','fdir'],'On deep-space missions, decisions must be made autonomously because of communication delay.'],
+  ['Muscle and bone loss','med',['gym'],'In weightlessness bones lose roughly 1% of density per month without countermeasures; exercise reduces this.'],
+  ['Fire on board','safe',['fire'],'Fire in an enclosed space quickly becomes critical, so sensors and extinguishers matter.']
+];
+const RANKS = [[35,'Space Rookie'],[50,'Junior Engineer'],[65,'Mission Specialist'],[80,'Expedition Commander'],[101,'Spaceflight Legend']];
+const ACH = [['first','First Step','Successful Moon mission'],['thrift','Frugal','Success while spending under 60% of the budget'],['mars','Martian','Successful Mars mission'],['top','Legend','Final score 85+'],['spart','Spartan','Success without a single comfort card'],['reserve','Redundancy Planner','Success with both a backup engine and backup comms']];
+const FUN = ['One day on Mars (a sol) lasts about 24 h 37 min.','A lunar day lasts about 29.5 Earth days.','A signal between Earth and Mars takes from ~3 to over 20 minutes.','On the ISS, water from humidity and urine is recycled into drinking water.','The first Moon landing was Apollo 11 in 1969.'];
+let P; try { P = JSON.parse(localStorage.getItem('dsd')); } catch (e) {}
+P = P || {pts:0, done:{}, ach:{}, best:{}, unl:{}};
+const save = () => { try { localStorage.setItem('dsd', JSON.stringify(P)); } catch (e) {} };
+const S = {scr:'menu', m:null, deck:new Set(), cat:'all', q:'', so:'p1', res:null};
+let snd = true, ac;
+function beep(f = 520) {
+  const AC = window.AudioContext || window.webkitAudioContext;
+  if (!snd || !AC) return;
+  try { ac = ac || new AC(); const o = ac.createOscillator(), g = ac.createGain(); o.frequency.value = f; g.gain.value = .04; o.connect(g); g.connect(ac.destination); o.start(); o.stop(ac.currentTime + .08); } catch (e) {}
+}
+const lockedC = c => c.o.lock && !P.unl[c.id];
+const clamp = v => Math.max(0, Math.min(100, Math.round(v)));
+
+function calc(m) {
+  const d = [...S.deck].map(id => CARDS.find(c => c.id === id)), F = {};
+  let sp = 0;
+  d.forEach(c => { sp += c.p; for (const k in c.o) if (k !== 'shelf' && k !== 'lock') F[k] = (F[k] || 0) + c.o[k]; });
+  const h = k => !!F[k], ok = c => (c.o.shelf || 9999) >= m.days;
+  const fu = d.reduce((a, c) => a + (ok(c) ? (c.o.food || 0) : 0), 0);
+  const nf = d.filter(c => c.o.food && ok(c)).length;
+  const crew = d.filter(c => c.o.crew).length;
+  const crit = {eng:h('eng') && h('fuel'), food:fu >= m.food * .6, life:h('life'), crew:crew >= m.crew};
+  const spec = h('geo') || h('bio');
+  const Pm = {};
+  Pm.safe = clamp(30 + (h('shield') ? (m.mars ? 30 : 15) : (m.mars ? -15 : 0)) + (h('radm') ? 8 : 0) + (h('fire') ? 8 : 0) + (h('beng') ? 10 : 0) + (h('doc') ? 8 : 0) + (h('therm') ? 8 : 0) + (h('man') ? 6 : 0) + (h('radx') ? 6 : 0));
+  Pm.food = clamp(Math.min(70, fu / m.food * 70) + Math.min(30, nf * 6));
+  Pm.tech = clamp(20 + (h('spare') ? 15 : 0) + (h('engr') ? 15 : 0) + (h('spare') && h('engr') ? 10 : 0) + (h('power') ? 10 : 0) + (h('auto') ? (m.mars ? 15 : 5) : 0) + (h('fdir') ? 10 : 0) + (h('nav') ? 8 : 0) + (h('pilot') ? 5 : 0) + (h('water') ? 8 : 0) + (h('comm') ? 6 : 0));
+  Pm.med = clamp(15 + (F.med || 0) + (h('doc') ? 15 : 0) + (h('doc') && h('diag') ? 20 : h('diag') ? 8 : 0) + (h('gym') ? 5 : 0));
+  Pm.com = clamp(15 + (F.c || 0) + (h('earth') && h('comm') && !m.mars ? 8 : 0) + (h('psy') ? 15 : 0) - ((F.c || 0) < m.com ? 15 : 0));
+  Pm.sci = clamp(15 + (F.sci || 0) * (spec ? 1 : .4) + (h('geo') && h('sci') ? 10 : 0) + (h('bio') ? 5 : 0) + (h('bio') && h('plant') ? 20 : 0));
+  Pm.eco = clamp(40 + (m.budget - sp) / m.budget * 60);
+  return {d, F, sp, fu, nf, crew, crit, P:Pm, m};
+}
+const critOk = x => Object.values(x.crit).every(Boolean);
+
+function verdict(c, x) {
+  const o = c.o, F = x.F, m = x.m;
+  if (o.shelf && o.shelf < m.days) return ['bad', 'Will spoil before the mission ends — the money was wasted.'];
+  if (o.sci && !(F.geo || F.bio)) return ['mid', 'Without a geologist or biologist the instruments work at about 40%.'];
+  if (o.plant) return F.bio ? ['good', 'Synergy with the biologist: a bonus to science and dietary variety.'] : ['mid', 'Without a biologist the garden yields far less benefit.'];
+  if (o.doc) return F.diag ? ['good', 'Physician plus diagnostics — more effective medicine.'] : ['mid', 'Without diagnostics the physician is limited.'];
+  if (o.diag && !F.doc) return ['mid', 'Diagnostics without a physician are used inefficiently.'];
+  if (o.spare) return F.engr ? ['good', 'Engineer + repair kit: smaller losses from malfunctions.'] : ['mid', 'Without an engineer, repairs are slower.'];
+  if (o.engr) return F.spare ? ['good', 'Together with the repair kit it reduces the impact of breakdowns.'] : ['mid', 'Without spare parts, repair options are limited.'];
+  if (o.earth && m.mars) return ['mid', 'On Mars, signal delay makes real-time conversations impossible — limited benefit.'];
+  if (o.gym && m.days < 30) return ['mid', 'On a short mission an exercise machine helps less than on a long one.'];
+  if (o.shield && !m.mars) return ['mid', 'On a short lunar mission shielding is less critical than on a Mars flight.'];
+  if (o.bcomm || o.beng) return ['good', 'Redundancy softens random failures.'];
+  return ['good', 'A useful contribution to mission readiness.'];
+}
+
+/* ---------- rendering ---------- */
+function render() {
+  const f = {menu, missions, prep, sim, report, howto, ach, coll}[S.scr];
+  app.innerHTML = ''; f(); window.scrollTo(0, 0);
+}
+const back = (to = 'menu') => `<button class="b alt sm" data-a="go" data-v="${to}">← Back</button>`;
+function menu() {
+  app.innerHTML = `<div class="menu"><h1>DECK OF SPACE'S DESTINY</h1><p class="fact">Every decision shapes the fate of the expedition</p>
+  <button class="b" data-a="go" data-v="missions">Start</button><button class="b alt" data-a="go" data-v="howto">How to play</button>
+  <button class="b alt" data-a="go" data-v="ach">Achievements</button><button class="b alt" data-a="go" data-v="coll">Card collection</button>
+  <p>Points: <b>${P.pts}</b></p><button class="b alt sm" data-a="reset">Reset progress</button></div>`;
+}
+function missions() {
+  app.innerHTML = `${back()}<h2>Choose a mission</h2><div class="row">` + Object.keys(M).map(k => {
+    const m = M[k], lk = k === 'mars' && !P.done.moon;
+    return `<div class="gl ms ${lk ? 'lk' : ''}" data-a="pick" data-v="${k}"><h3>${m.e} ${m.n} ${lk ? '🔒 (after winning the Moon mission)' : ''}</h3><p>${m.info}</p><p>Budget: <b>$${m.budget}M</b> · Min. crew: ${m.crew}</p><p>Best result: ${P.best[k] || '—'}</p></div>`;
+  }).join('') + '</div>';
+}
+function howto() {
+  app.innerHTML = `${back()}<div class="gl"><h2>How to play</h2><p>1. Pick a mission and build a deck within the budget. Clicking a card flips it: the back shows a hint and a science fact.</p>
+  <p>2. Critical conditions: main engine + fuel, minimum food (that will not spoil during the mission), life support, minimum crew.</p>
+  <p>3. Synergies: biologist + garden, engineer + repair kit, physician + diagnostics, comfort + communications, backup systems.</p>
+  <p>4. After launch, random events occur; their consequences depend on your cards. The report explains every decision.</p>
+  <p>5. Mars is an entirely different strategy: 500 days, radiation, communication delay. Points unlock new cards in the collection.</p></div>`;
+}
+function ach() {
+  app.innerHTML = `${back()}<h2>Achievements</h2><div class="row">` + ACH.map(a => `<div class="gl"><h3>${P.ach[a[0]] ? '🏆' : '🔒'} ${a[1]}</h3><p>${a[2]}</p></div>`).join('') + '</div>';
+}
+function coll() {
+  app.innerHTML = `${back()}<h2>Card collection · points: ${P.pts}</h2><div class="grid">${CARDS.map(c => cardHTML(c, true)).join('')}</div>`;
+}
+function cardHTML(c, collMode) {
+  const [cn, col] = CAT[c.cat], lk = lockedC(c), own = !collMode && S.deck.has(c.id);
+  let btn;
+  if (collMode) btn = lk ? `<button class="b sm" data-a="buy" data-v="${c.id}" ${P.pts < c.o.lock ? 'disabled' : ''}>Unlock for ${c.o.lock} pts</button>` : '<button class="b alt sm" disabled>Unlocked</button>';
+  else btn = lk ? `<button class="b alt sm" disabled>🔒 ${c.o.lock} pts (Collection)</button>` : own ? `<button class="b alt sm" data-a="rm" data-v="${c.id}">Remove</button>` : `<button class="b sm" data-a="add" data-v="${c.id}">Add</button>`;
+  return `<div class="cw ${own ? 'own' : ''} ${lk ? 'lock' : ''}" style="--c:${col}"><div class="card" data-a="flip"><div class="in">
+  <div class="fr"><small>${cn}</small><div class="em">${c.e}</div><h4>${c.n}</h4><p>${c.d}</p><span class="pr">$${c.p}M · estimate</span></div>
+  <div class="bk"><small>Hint</small><p>${c.h}</p><p class="fact">🔬 ${c.f}</p><p><i>Full analysis — after the mission</i></p></div></div></div>${btn}</div>`;
+}
+function prep() {
+  const m = M[S.m];
+  app.innerHTML = `${back('missions')}<h2>Preparation: ${m.e} ${m.n}</h2><p class="fact">💡 ${FUN[Math.floor(Math.random() * FUN.length)]}</p><div class="prep"><div>
+  <div class="bar"><input id="q" placeholder="Search cards…" value="${S.q}"><select id="so"><option value="p1">Price ↑</option><option value="p2">Price ↓</option><option value="n">Name</option></select></div>
+  <div class="chips" id="chips"></div><div class="grid" id="grid"></div></div><aside class="gl panel" id="panel"></aside></div>`;
+  $('#so').value = S.so; chips(); grid(); panel();
+}
+function chips() {
+  $('#chips').innerHTML = `<span class="chip ${S.cat === 'all' ? 'on' : ''}" data-a="cat" data-v="all">All (${CARDS.length})</span>` + Object.keys(CAT).map(k => {
+    const n = CARDS.filter(c => c.cat === k).length, h = [...S.deck].filter(id => CARDS.find(c => c.id === id).cat === k).length;
+    return `<span class="chip ${S.cat === k ? 'on' : ''}" style="--c:${CAT[k][1]}" data-a="cat" data-v="${k}">${CAT[k][0]} ${h}/${n}</span>`;
+  }).join('');
+}
+function grid() {
+  const f = {p1:(a, b) => a.p - b.p, p2:(a, b) => b.p - a.p, n:(a, b) => a.n.localeCompare(b.n, 'en')};
+  const a = CARDS.filter(c => (S.cat === 'all' || c.cat === S.cat) && (c.n + c.d).toLowerCase().includes(S.q.toLowerCase())).sort(f[S.so]);
+  $('#grid').innerHTML = a.length ? a.map(c => cardHTML(c)).join('') : '<p>Nothing found.</p>';
+}
+function panel() {
+  const m = M[S.m], x = calc(m), left = m.budget - x.sp, over = left < 0;
+  const L = {eng:'Main engine + fuel', food:`Food (${x.fu}/${m.food}, min. ${Math.ceil(m.food * .6)})`, life:'Life support', crew:`Crew (${x.crew}/${m.crew})`};
+  const done = Object.values(x.crit).filter(Boolean).length * 25;
+  $('#panel').innerHTML = `<h3>Budget</h3><div class="dk"><span>Start</span><b>$${m.budget}M</b></div><div class="dk"><span>Spent</span><b>$${x.sp}M</b></div>
+  <div class="dk"><span>Remaining</span><b class="${over ? 'no' : 'ok'}">$${left}M</b></div><div class="meter ${over ? 'bad' : ''}"><i style="width:${Math.min(100, x.sp / m.budget * 100)}%"></i></div>
+  <h3>Launch readiness</h3><div class="meter"><i style="width:${done}%"></i></div>` +
+  Object.keys(L).map(k => `<div class="${x.crit[k] ? 'ok' : 'no'}">${x.crit[k] ? '✔' : '✘'} ${L[k]}</div>`).join('') +
+  `<h3>Deck (${x.d.length})</h3>` + (x.d.map(c => `<div class="dk"><span>${c.e} ${c.n}</span><span>$${c.p}M <button data-a="rm" data-v="${c.id}" title="Remove">✕</button></span></div>`).join('') || '<p>Empty</p>') +
+  `<br><button class="b" data-a="launch" ${over || !critOk(x) ? 'disabled' : ''}>🚀 Launch mission</button>${over ? '<p class="no">Budget exceeded</p>' : ''}`;
+}
+function launch() {
+  const m = M[S.m], x = calc(m);
+  if (x.sp > m.budget || !critOk(x)) return;
+  x.evs = [...EV].sort(() => Math.random() - .5).slice(0, m.ev).map(e => {
+    const ok = e[2].some(k => x.F[k]);
+    if (!ok) x.P[e[1]] = Math.max(0, x.P[e[1]] - 12);
+    return {n:e[0], par:e[1], ok, f:e[3]};
+  });
+  x.avg = Math.round(Object.values(x.P).reduce((a, b) => a + b, 0) / 7);
+  x.res = x.avg >= 65 ? 'Success' : x.avg >= 45 ? 'Partial success' : 'Failure';
+  x.rank = RANKS.find(r => x.avg < r[0])[1];
+  x.gain = Math.round(x.avg * (x.res === 'Success' ? 1.5 : x.res === 'Partial success' ? 1 : .5));
+  P.pts += x.gain; P.best[S.m] = Math.max(P.best[S.m] || 0, x.avg);
+  const win = x.res === 'Success', F = x.F;
+  if (win) {
+    P.done[S.m] = 1;
+    if (S.m === 'moon') P.ach.first = 1;
+    if (S.m === 'mars') P.ach.mars = 1;
+    if (x.sp < m.budget * .6) P.ach.thrift = 1;
+    if (!x.d.some(c => c.cat === 'com')) P.ach.spart = 1;
+    if (F.beng && F.bcomm) P.ach.reserve = 1;
+  }
+  if (x.avg >= 85) P.ach.top = 1;
+  save(); S.res = x; S.scr = 'sim'; render(); beep(300);
+}
+function sim() {
+  const x = S.res, ph = ['Liftoff', 'Ascent', 'Orbit', 'In flight', 'Mission work', 'Return'];
+  app.innerHTML = `<div class="sim"><h2>Mission: ${M[S.m].n}</h2><div class="rk">🚀</div><div class="meter"><i id="pb" style="width:0"></i></div><h3 id="ph">${ph[0]}</h3><div class="gl log" id="log"></div></div>`;
+  let p = 0, shown = 0;
+  const t = setInterval(() => {
+    p++; $('#pb').style.width = p + '%'; $('#ph').textContent = ph[Math.min(5, Math.floor(p / 17))];
+    if (shown < x.evs.length && p >= (shown + 1) * 100 / (x.evs.length + 1)) {
+      const e = x.evs[shown++];
+      $('#log').insertAdjacentHTML('beforeend', `<p>${e.ok ? '🟢' : '🔴'} <b>${e.n}</b> — ${e.ok ? 'mitigated thanks to equipment/crew' : 'noticeable consequences: ' + PN[e.par] + ' −12'}</p>`);
+      beep(e.ok ? 660 : 220);
+    }
+    if (p >= 100) { clearInterval(t); S.scr = 'report'; render(); }
+  }, 60);
+}
+const bar = (l, v) => `<div>${l}: <b>${v}</b></div><div class="meter ${v < 40 ? 'bad' : ''}"><i style="width:${v}%"></i></div>`;
+function report() {
+  const x = S.res, m = x.m, F = x.F, col = x.res === 'Success' ? 'ok' : x.res === 'Failure' ? 'no' : 'mid';
+  const roles = [['doc', 'physician'], ['engr', 'engineer'], ['geo', 'geologist'], ['bio', 'biologist'], ['pilot', 'pilot'], ['psy', 'psychologist'], ['radx', 'radiologist']];
+  const miss = roles.filter(r => !F[r[0]]).map(r => r[1]);
+  const top = [...x.d].sort((a, b) => b.p - a.p).slice(0, 3);
+  const sci = [
+    ['Water', 'A person needs liters of water every day; on the ISS humidity and urine are recycled into drinking water, which reduces dependence on cargo ships. For Mars, recycling is a necessity.'],
+    ['Microgravity', 'Without loading, muscles and bones weaken (roughly 1% bone density per month), so exercise machines, nutrition and medical monitoring are needed.'],
+    ['Isolation', 'Prolonged isolation affects sleep and mood, as studied in experiments such as Mars-500. Comfort helps but does not replace training.'],
+    ['Radiation', 'Beyond Earth’s magnetosphere the risk from solar storms and cosmic rays increases; monitoring, a shelter and mission planning are needed.'],
+    ['Nutrition', 'The diet must be calorie-sufficient, varied and not spoil during the mission. Fresh fruit on a long flight is a weak choice.']
+  ];
+  app.innerHTML = `<div class="gl c"><div class="big ${col}">${x.res}</div><h2>Rank: ${x.rank} · ${x.avg}/100</h2><p>Points earned: +${x.gain} (total ${P.pts})</p>
+  <button class="b" data-a="go" data-v="missions">New mission</button> <button class="b alt" data-a="go" data-v="menu">Menu</button></div>
+  <div class="gl"><h3>1. Overall result</h3><p>Mission: ${m.n} (${m.days} days). Crew: ${x.crew}. Spent $${x.sp}M of $${m.budget}M.</p>` + Object.keys(PN).map(k => bar(PN[k], x.P[k])).join('') +
+  `<h4>Events</h4>` + x.evs.map(e => `<div class="rc ${e.ok ? 'good' : 'bad'}"><b>${e.n}</b> — ${e.ok ? 'mitigated' : 'problem (' + PN[e.par] + ' −12)'}<p class="fact">🔬 ${e.f}</p></div>`).join('') + `</div>
+  <div class="gl"><h3>2. Card analysis</h3>` + x.d.map(c => { const v = verdict(c, x); return `<div class="rc ${v[0]}"><b>${c.e} ${c.n}</b> ($${c.p}M)<p>${v[1]}</p><p class="fact">🔬 ${c.f}</p><p>↔ Alternative: ${ALT[c.cat]}.</p></div>`; }).join('') + `</div>
+  <div class="gl"><h3>3. Crew</h3><p>${miss.length ? 'Not on the crew: ' + miss.join(', ') + '. This is not a mistake in itself, but it affects how effectively the related equipment is used.' : 'The crew is balanced across roles.'}</p>
+  <p>Traits such as a sensitive vestibular system are not a verdict: suitability is assessed individually and depends on mission length, protocols and medical support (medical score: ${x.P.med}/100).</p></div>
+  <div class="gl"><h3>4. Budget</h3><p>Biggest expenses: ${top.map(c => `${c.n} ($${c.p}M)`).join(', ')}. ${x.sp < m.budget ? 'The remaining $' + (m.budget - x.sp) + 'M could go into redundancy.' : ''} Savings are possible on duplicated or unused cards (see the analysis). Cost efficiency: ${x.P.eco}/100.</p></div>
+  <div class="gl"><h3>5. Scientific explanations</h3>` + sci.map(s => `<p><b>${s[0]}.</b> ${s[1]}</p>`).join('') + `</div>
+  <div class="gl"><h3>6. Real-world examples</h3><p>Apollo 11 (1969) — the first crewed Moon landing. Apollo 13 (1970) — the crew returned thanks to improvisation and support from Earth. The ISS — long-duration flights and medical research. Artemis I (2022) — an uncrewed Orion flight around the Moon. Perseverance (2021) — a rover in Jezero Crater.</p></div>
+  <div class="gl"><h3>7. Sources</h3><p><a href="https://www.nasa.gov" target="_blank" rel="noopener">NASA</a> · <a href="https://www.esa.int" target="_blank" rel="noopener">ESA</a> · <a href="https://global.jaxa.jp" target="_blank" rel="noopener">JAXA</a></p><p class="fact">All prices in the game are model estimates.</p></div>`;
+}
+/* ---------- events ---------- */
+app.addEventListener('click', e => {
+  const t = e.target.closest('[data-a]'); if (!t) return;
+  const a = t.dataset.a, v = t.dataset.v; beep();
+  if (a === 'go') { S.scr = v; render(); }
+  else if (a === 'pick') { if (v === 'mars' && !P.done.moon) return; S.m = v; S.deck = new Set(); S.cat = 'all'; S.q = ''; S.scr = 'prep'; render(); }
+  else if (a === 'flip') t.classList.toggle('fl');
+  else if (a === 'add') { S.deck.add(v); chips(); grid(); panel(); }
+  else if (a === 'rm') { S.deck.delete(v); chips(); grid(); panel(); }
+  else if (a === 'cat') { S.cat = v; chips(); grid(); }
+  else if (a === 'launch') launch();
+  else if (a === 'buy') { const c = CARDS.find(c => c.id === v); if (P.pts >= c.o.lock) { P.pts -= c.o.lock; P.unl[v] = 1; save(); render(); } }
+  else if (a === 'reset') { if (confirm('Reset all progress?')) { P = {pts:0, done:{}, ach:{}, best:{}, unl:{}}; save(); render(); } }
+});
+app.addEventListener('input', e => {
+  if (e.target.id === 'q') { S.q = e.target.value; grid(); }
+  if (e.target.id === 'so') { S.so = e.target.value; grid(); }
+});
+document.addEventListener('click', e => { if (e.target.closest('#snd')) { snd = !snd; $('#snd').textContent = snd ? '🔊 Sound' : '🔇 Sound'; } });
+render();
+</script>
+</body>
+</html>
